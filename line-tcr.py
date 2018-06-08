@@ -48,7 +48,7 @@ Creator  =  View the bot maker's contacts
 private command :
 Set group =See the private menu"""
 
-Setgroup =""" Private Menu 􀔃􀄆red check mark􏿿
+Setgroup =""" Private Menu 
 
 [Protect Group]
 -- Gr on/off
