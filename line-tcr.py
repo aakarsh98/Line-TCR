@@ -59,7 +59,7 @@ Setgroup =""" Private Menu
 [No Joinned]
 -- Joinn on/off
 
-􀔃􀅕red arrow right􏿿 Command Private
+red arrow right Command Private
 [Set View] = See bot protection
 [Get ready] = Check bot response
 [Gn namagroup] = Rename group
