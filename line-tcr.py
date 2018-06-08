@@ -95,9 +95,9 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,"YOUR_MID"]
-admin=["YOUR_MID"]
-admsa=["YOUR_MID"]
+Bots=[mid,Amid,Bmid,Cmid,"ufe1ff82769e05cbebed3b513e813c1b4"]
+admin=["ufe1ff82769e05cbebed3b513e813c1b4"]
+admsa=["ufe1ff82769e05cbebed3b513e813c1b4"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -672,7 +672,7 @@ def bot(op):
             elif msg.text in ["Creator","creator"]:
                 msg.contentType = 13
                 cl.sendText(msg.to, "Created By:Yoda")
-                msg.contentMetadata = {'mid': 'ue11fc7860247c63bd3da149613a793f6'}
+                msg.contentMetadata = {'mid': 'ufe1ff82769e05cbebed3b513e813c1b4'}
                 cl.sendMessage(msg)
             elif msg.text in ["Me"]:
                 msg.contentType = 13
