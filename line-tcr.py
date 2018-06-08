@@ -27,26 +27,26 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" - Ard Squad bot -
+helpMessage =""" Yoda Here
 
 General command :
-Me  =  Cek akun sendiri
-My mid  =  Cek akun Mid
-Mid @ = Cek mid via tag
-Bot?  =  Cek akun Bot
+Me  =  Check your own account
+My mid  =  Check MID account
+Mid @ = Check MID Via @tag
+Bot?  =  Check Bot account
 Ginfo  =  Group info
-Id Group = Melihat id grup
-Group pict  =  Melihat pict grup
-Speedbot  =  Cek kecepatan bot
-Up  =  Fungsi spam chat
-Tagall  =  Mention semua user
-Cek  =  Membuat set point
-Sider  =  Melihat sider dibawah read point
-Apakah ...  =  Menanyakan jawaban ya atau tidak
-Creator  =  Melihat kontak pembuat bot
+Id Group = View group id
+Group pict  =  See the group picture
+Speedbot  =  Check the speed of the bot
+Up  =  Spam chat function
+Tagall  =  Mention all users
+Check  =  Creating set point
+Sider  =  See the cider below the read point
+Apakah ...  =  Asking yes or no answers
+Creator  =  View the bot maker's contacts
 
 private command :
-Set group = Melihat private menu"""
+Set group =See the private menu"""
 
 Setgroup =""" Private Menu 􀔃􀄆red check mark􏿿
 
@@ -60,34 +60,34 @@ Setgroup =""" Private Menu 􀔃􀄆red check mark􏿿
 -- Joinn on/off
 
 􀔃􀅕red arrow right􏿿 Command Private
-[Set View] = Melihat proteksi bot
-[Get ready] = Cek respon bot
-[Gn namagroup] = Ganti nama grup
-[Open url] = Membuka url grup
-[Gurl] = Membuka dan mengirim url grup
-[Close url] = Menutup url grup
-[Cancel] = Cancel user masuk grup
-[Staff add @] = Menambah user admin
-[Staff remove @] = Menghapus user dari admin
-[Stafflist] = Melihat daftar admin
+[Set View] = See bot protection
+[Get ready] = Check bot response
+[Gn namagroup] = Rename group
+[Open url] = Opens a group url
+[Gurl] = Open and send the group url
+[Close url] = Closes the group URL
+[Cancel] = Cancel user enters group
+[Staff add @] = Add an admin user
+[Staff remove @] = Remove User from ADMIN
+[Stafflist] = Show staff list
 [Ban @] = Ban target with mention
 [Ban] = Ban target with send contact 
 [Unban @] = Unban target with mention
 [Unban] = Unban target with send contact
-[Banlist] = Melihat daftar akun ter-banned
+[Banlist] = See list of accounts banned
 [Kill @] = Kick target banned
 [Nk @] = Kick target user
-[List group] = Melihat daftar grup pada bot
-[Group id] = Melihat daftar id grup pada bot
+[List group] = View the group list on the bot
+[Group id] = View the list of group ids on the bot
 [Invite mid] = Invite via mid
-[inv: (gid)] = Invite admin ke group id yang dituju
+[inv: (gid)] = Invite the admin to the target group id
 [Kick mid] = Kick via mid
-[Ard Squad join] = Invite semua bot
-[Bye bots] = Mengeluarkan semua bots assist
-[Bye Ard] = Mengeluarkan bot utama
-[Ard out] = Mengeluarkan bot utama dari semua grup
-[Bc ...] = Untuk broadcast ke semua grup
-[Kernel] = Melihat kernel bot"""
+[yoda squad join] = Invite semua bot
+[Bye bots] = Remove all bots	
+[Bye yoda] = Remove main bot
+[yoda out] = remove main bot from all groups
+[Bc ...] = To broadcast to all groups
+[Kernel] = Looking at the kernel bot"""
 KAC=[cl,ki,kk,kc]
 DEF=[ki,kk,kc]
 mid = cl.getProfile().mid
@@ -105,7 +105,7 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"Thanks for adding me\nFollow my instagram; instagram.com/fajrinard",
+    'message':"yo",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":True,
@@ -113,10 +113,10 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"Ard",
-    "cName2":"Ard 1",
-    "cName3":"Ard 2",
-    "cName4":"Ard 3",
+    "cName":"yoda",
+    "cName2":"Drunken Yoda",
+    "cName3":"Beaten Yoda",
+    "cName4":"Helpless yoda",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -414,7 +414,7 @@ def bot(op):
 				print "Admin invited back"      
 
 			if mid in op.param3:
-				print "BOT1 has been kicked"
+				print "yoda has been kicked"
 				if op.param2 in Bots:
 					pass
 				if op.param2 in admin:
@@ -432,10 +432,10 @@ def bot(op):
 					X.preventJoinByTicket = True
 					ki.updateGroup(X)
 					Ti = ki.reissueGroupTicket(op.param1)
-					print "BOT1 Joined"
+					print "yoda Joined"
 				
 			if Amid in op.param3:
-				print "BOT2 has been kicked"
+				print "Drunken Yoda"
 				if op.param2 in Bots:
 					pass
 				if op.param2 in admin:
@@ -453,10 +453,10 @@ def bot(op):
 					X.preventJoinByTicket = True
 					cl.updateGroup(X)
 					Ti = cl.reissueGroupTicket(op.param1)
-					print "BOT2 Joined"
+					print "Drunken Yoda"
 				
 			if Bmid in op.param3:
-				print "BOT3 has been kicked"
+				print "Beaten Yoda has been kicked"
 				if op.param2 in Bots:
 					pass
 				if op.param2 in admin:
@@ -474,10 +474,10 @@ def bot(op):
 					X.preventJoinByTicket = True
 					cl.updateGroup(X)
 					Ti = cl.reissueGroupTicket(op.param1)
-					print "BOT3 Joined"
+					print "Beaten Yoda Joined"
 				
 			if Cmid in op.param3:
-				print "BOT4 has been kicked"
+				print "Helpless yoda has been kicked"
 				if op.param2 in Bots:
 					pass
 				if op.param2 in admin:
@@ -495,7 +495,7 @@ def bot(op):
 					X.preventJoinByTicket = True
 					cl.updateGroup(X)
 					Ti = cl.reissueGroupTicket(op.param1)
-					print "BOT4 Joined"
+					print "Helpless yoda Joined"
 				
 			else:
 				if wait["Protectgr"] == True:
@@ -671,7 +671,7 @@ def bot(op):
                 kc.sendMessage(msg)
             elif msg.text in ["Creator","creator"]:
                 msg.contentType = 13
-                cl.sendText(msg.to, "Created By: FajrinArd")
+                cl.sendText(msg.to, "Created By:Yoda")
                 msg.contentMetadata = {'mid': 'ue11fc7860247c63bd3da149613a793f6'}
                 cl.sendMessage(msg)
             elif msg.text in ["Me"]:
@@ -1104,7 +1104,7 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Ard Squad join"]:
+            elif msg.text in ["yoda squad"]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
